@@ -12,6 +12,9 @@ const nextConfig: NextConfig = {
     return [
       { source: "/ft7", destination: "https://ft7-site.vercel.app/ft7" },
       { source: "/ft7/:path*", destination: "https://ft7-site.vercel.app/ft7/:path*" },
+      // /skykeys: SkyKeys' site, its own Vercel project (skykeys-site), built in the SkyKeys repo.
+      { source: "/skykeys", destination: "https://skykeys-site.vercel.app/skykeys" },
+      { source: "/skykeys/:path*", destination: "https://skykeys-site.vercel.app/skykeys/:path*" },
     ];
   },
 };
